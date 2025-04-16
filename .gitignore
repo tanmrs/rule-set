@@ -1,0 +1,13 @@
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# mihomo二进制文件
+mihomo
+mihomo-*
+
+# IDE文件
+.idea/
+.vscode/
+*.swp
+*.swo 

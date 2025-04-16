@@ -1,0 +1,40 @@
+name: Convert Rules
+
+on:
+  push:
+    paths:
+      - 'rules/**'
+  workflow_dispatch:
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Create dist directory
+        run: mkdir -p dist
+
+      - name: Download and setup mihomo
+        run: |
+          wget https://github.com/MetaCubeX/mihomo/releases/download/v1.19.4/mihomo-linux-amd64-v1.19.4.gz
+          gunzip mihomo-linux-amd64-v1.19.4.gz
+          chmod +x mihomo-linux-amd64-v1.19.4
+          mv mihomo-linux-amd64-v1.19.4 mihomo
+
+      - name: Convert rules
+        run: |
+          for file in rules/*.list; do
+            if [ -f "$file" ]; then
+              filename=$(basename "$file" .list)
+              ./mihomo convert-ruleset domain text "$file" "dist/$filename.mrs"
+            fi
+          done
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add dist/
+          git commit -m "Update converted rules" || echo "No changes to commit"
+          git push 
