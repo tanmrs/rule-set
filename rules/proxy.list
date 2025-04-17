@@ -2,19 +2,4 @@
 # 更新时间：2024-04-16
 
 # 社交媒体
-DOMAIN-SUFFIX,facebook.com
-DOMAIN-SUFFIX,twitter.com
-DOMAIN-SUFFIX,instagram.com
-
-# 视频流媒体
-DOMAIN-SUFFIX,youtube.com
-DOMAIN-SUFFIX,netflix.com
-DOMAIN-SUFFIX,hulu.com
-
-# 搜索引擎
-DOMAIN-SUFFIX,google.com
-DOMAIN-SUFFIX,bing.com
-
-# 新闻网站
-DOMAIN-SUFFIX,bbc.com
-DOMAIN-SUFFIX,cnn.com 
+DOMAIN-SUFFIX,canva.com
