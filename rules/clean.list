@@ -2,22 +2,4 @@
 # 更新时间：2024-04-16
 
 # 国内网站
-DOMAIN-SUFFIX,baidu.com
-DOMAIN-SUFFIX,qq.com
-DOMAIN-SUFFIX,taobao.com
-DOMAIN-SUFFIX,jd.com
-
-# 国内视频
-DOMAIN-SUFFIX,bilibili.com
-DOMAIN-SUFFIX,iqiyi.com
-DOMAIN-SUFFIX,youku.com
-
-# 国内社交
-DOMAIN-SUFFIX,weibo.com
-DOMAIN-SUFFIX,zhihu.com
-DOMAIN-SUFFIX,douban.com
-
-# 国内新闻
-DOMAIN-SUFFIX,sina.com.cn
-DOMAIN-SUFFIX,163.com
-DOMAIN-SUFFIX,sohu.com 
+DOMAIN-SUFFIX,canva.com
