@@ -3,7 +3,8 @@
 
 # 社交媒体
 DOMAIN-SUFFIX,canva.com
-
+DOMAIN-SUFFIX,joeyblog.net
 
 #关键字匹配
 DOMAIN-KEYWORD,canva.com
+DOMAIN-KEYWORD,joeyblog.net
