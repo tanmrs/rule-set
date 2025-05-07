@@ -3,7 +3,8 @@
 
 # 社交媒体
 DOMAIN-SUFFIX,www.bilibili.com
-
+DOMAIN-SUFFIX,pan.quark.cn
 
 #关键字匹配
 DOMAIN-KEYWORD,bilibili.com
+DOMAIN-SUFFIX,pan.quark.cn
